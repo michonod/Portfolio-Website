@@ -23,7 +23,7 @@ export const WrapperLeft = styled.div`
 export const WrapperRight = styled.div`
   transform: rotate(90deg);
   position: fixed;
-  right: -50px;
+  right: -40px;
   bottom: 150px;
 `;
 
