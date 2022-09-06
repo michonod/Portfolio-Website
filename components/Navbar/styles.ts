@@ -10,6 +10,7 @@ export const NavbarContainer = styled.nav`
   background: transparent;
   top: 0;
   left: 0;
+  z-index: 100;
 `;
 
 export const Logo = styled.h3`
@@ -37,5 +38,5 @@ export const ListItem = styled.li`
 
 export const Link = styled.a`
   text-decoration: none;
-  color: black;
+  color: ${(props) => props.theme.color.black};
 `;

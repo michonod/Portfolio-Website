@@ -1,8 +1,13 @@
 import React from "react";
+import { useTheme } from "@emotion/react";
 
 const About = () => {
+  const theme = useTheme();
   return (
-    <div id="about" style={{ height: "100vh", backgroundColor: "#76D7C4" }}>
+    <div
+      id="about"
+      style={{ height: "100vh", backgroundColor: `${theme.color.secondary}` }}
+    >
       About
     </div>
   );

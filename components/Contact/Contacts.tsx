@@ -14,7 +14,7 @@ interface ContactProps {
   position: "left" | "right";
 }
 
-const Contact = ({ position }: ContactProps) => {
+const Contacts = ({ position }: ContactProps) => {
   return (
     <div>
       {position === "left" && (
@@ -37,4 +37,4 @@ const Contact = ({ position }: ContactProps) => {
   );
 };
 
-export default Contact;
+export default Contacts;
