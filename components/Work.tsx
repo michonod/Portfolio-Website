@@ -1,8 +1,12 @@
 import React from "react";
+import { theme } from "../helpers/Theme";
 
 const Work = () => {
   return (
-    <div id="myWork" style={{ height: "100vh", backgroundColor: "#62706d" }}>
+    <div
+      id="myWork"
+      style={{ height: "100vh", backgroundColor: theme.color.primary }}
+    >
       Work
     </div>
   );

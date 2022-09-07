@@ -1,31 +1,20 @@
 import { NextPage } from "next";
-import React, { useState } from "react";
+import React from "react";
 import Button from "../Button/Button";
 import { Logo } from "./styles";
 import { NavbarContainer, List, ListItem, Link } from "./styles";
 
-const Navbar: NextPage = () => {
-  const [navbarColor, setNavbarColor] = useState(false);
-
+type NavbarProps = {
+  styleState: boolean;
+};
+const Navbar: NextPage<NavbarProps> = ({ styleState }) => {
   const ActiveStyle = {
-    backgroundColor: "#FCF3CF",
-    transition: "0.4s ease-in",
+    backgroundColor: "rgb(210, 210, 206)",
+    transition: "0.5s ease-in",
   };
-
-  const changeNavColor = () => {
-    if (window.scrollY >= 100) {
-      setNavbarColor(true);
-    } else {
-      setNavbarColor(false);
-    }
-  };
-
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", changeNavColor);
-  }
 
   return (
-    <NavbarContainer style={navbarColor ? ActiveStyle : undefined}>
+    <NavbarContainer style={styleState ? ActiveStyle : undefined}>
       <Logo>michonoD.</Logo>
       <List>
         <ListItem>

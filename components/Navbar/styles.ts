@@ -31,8 +31,8 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  margin: 0px 20px;
-  font-size: 16px;
+  margin: 0px 15px;
+  font-size: 15px;
   list-style: none;
 `;
 

@@ -1,8 +1,12 @@
 import React from "react";
+import { theme } from "../helpers/Theme";
 
 const Contact = () => {
   return (
-    <div id="contact" style={{ height: "100vh", backgroundColor: "#85f900" }}>
+    <div
+      id="contact"
+      style={{ height: "100vh", backgroundColor: theme.color.primary }}
+    >
       Contact
     </div>
   );

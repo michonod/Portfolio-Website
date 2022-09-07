@@ -20,10 +20,10 @@ const Contacts = ({ position }: ContactProps) => {
       {position === "left" && (
         <ContactLeft>
           <WrapperLeft>
-            <InstagramIcon />
-            <LinkedinIcon />
-            <FacebookIcon />
-            <GithubIcon />
+            <InstagramIcon style={{ color: "#e6683c" }} />
+            <LinkedinIcon style={{ color: "#0072b1" }} />
+            <FacebookIcon style={{ color: "#0165E1" }} />
+            <GithubIcon style={{ color: " #171515" }} />
           </WrapperLeft>
         </ContactLeft>
       )}

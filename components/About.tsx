@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      style={{ height: "100vh", backgroundColor: `${theme.color.secondary}` }}
+      style={{ height: "100vh", backgroundColor: `${theme.color.primary}` }}
     >
       About
     </div>
