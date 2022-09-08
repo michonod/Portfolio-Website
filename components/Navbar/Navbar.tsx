@@ -1,15 +1,16 @@
 import { NextPage } from "next";
 import React from "react";
 import Button from "../Button/Button";
-import { Logo } from "./styles";
-import { NavbarContainer, List, ListItem, Link } from "./styles";
+import { DownloadIcon, Logo } from "./styles";
+import { NavbarContainer, List, ListItem, Link as LinkA } from "./styles";
+import Link from "next/link";
 
 type NavbarProps = {
   styleState: boolean;
 };
 const Navbar: NextPage<NavbarProps> = ({ styleState }) => {
   const ActiveStyle = {
-    backgroundColor: "#38ef7d",
+    backgroundColor: "#00416a",
     transition: "0.5s ease-in",
   };
 
@@ -18,19 +19,24 @@ const Navbar: NextPage<NavbarProps> = ({ styleState }) => {
       <Logo>michonoD.</Logo>
       <List>
         <ListItem>
-          <Link href="#home">Home</Link>
+          <LinkA href="#home">Home</LinkA>
         </ListItem>
         <ListItem>
-          <Link href="#about">About Me</Link>
+          <LinkA href="#about">About Me</LinkA>
         </ListItem>
         <ListItem>
-          <Link href="#myWork">My work</Link>
+          <LinkA href="#myWork">My work</LinkA>
         </ListItem>
         <ListItem>
-          <Link href="#contact">Contact</Link>
+          <LinkA href="#contact">Contact</LinkA>
         </ListItem>
         <ListItem>
-          <Button title="Resume" />
+          <LinkA href="/assets/cv.pdf" target="_blank" download>
+            <Button>
+              Resume
+              <DownloadIcon />
+            </Button>
+          </LinkA>
         </ListItem>
       </List>
     </NavbarContainer>

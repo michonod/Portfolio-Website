@@ -6,6 +6,7 @@ import {
   FacebookIcon,
   GithubIcon,
   InstagramIcon,
+  LinkA,
   LinkedinIcon,
   WrapperLeft,
   WrapperRight,
@@ -23,7 +24,7 @@ const Contacts = ({ position }: ContactProps) => {
           <WrapperLeft>
             <Link href="https://www.instagram.com/michonod/" passHref>
               <a target="_blank" rel="noopener noreferrer">
-                <InstagramIcon style={{ color: "#e6683c" }} />
+                <InstagramIcon />
               </a>
             </Link>
             <Link
@@ -31,17 +32,17 @@ const Contacts = ({ position }: ContactProps) => {
               passHref
             >
               <a target="_blank" rel="noopener noreferrer">
-                <LinkedinIcon style={{ color: "#0072b1" }} />
+                <LinkedinIcon />
               </a>
             </Link>
             <Link href="https://www.facebook.com/majkl.david/" passHref>
               <a target="_blank" rel="noopener noreferrer">
-                <FacebookIcon style={{ color: "#0165E1" }} />
+                <FacebookIcon />
               </a>
             </Link>
             <Link href="https://github.com/michonod" passHref>
               <a target="_blank" rel="noopener noreferrer">
-                <GithubIcon style={{ color: " #171515" }} />
+                <GithubIcon />
               </a>
             </Link>
           </WrapperLeft>
@@ -50,7 +51,15 @@ const Contacts = ({ position }: ContactProps) => {
 
       {position === "right" && (
         <ContactRight>
-          <WrapperRight>mihail_davidevski@outlook.com</WrapperRight>
+          <WrapperRight>
+            <LinkA
+              href="mailto:mihail_davidevski@outlook.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              mihail_davidevski@outlook.com
+            </LinkA>
+          </WrapperRight>
         </ContactRight>
       )}
     </div>

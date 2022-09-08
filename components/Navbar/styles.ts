@@ -1,3 +1,4 @@
+import { DownloadOutlined } from "@ant-design/icons";
 import styled from "@emotion/styled";
 
 export const NavbarContainer = styled.nav`
@@ -15,8 +16,9 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const Logo = styled.h3`
-  font-size: 24px;
+  font-size: 54px;
   margin-left: 70px;
+  font-family: "Qwitcher Grypen", cursive;
 `;
 
 export const List = styled.ul`
@@ -43,6 +45,18 @@ export const ListItem = styled.li`
 `;
 
 export const Link = styled.a`
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
   color: ${(props) => props.theme.color.black};
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    color: black;
+  }
+`;
+
+export const DownloadIcon = styled(DownloadOutlined)`
+  margin-left: 5px;
+  font-size: 18px;
 `;
