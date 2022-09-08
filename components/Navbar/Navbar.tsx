@@ -9,7 +9,7 @@ type NavbarProps = {
 };
 const Navbar: NextPage<NavbarProps> = ({ styleState }) => {
   const ActiveStyle = {
-    backgroundColor: "rgb(210, 210, 206)",
+    backgroundColor: "#38ef7d",
     transition: "0.5s ease-in",
   };
 

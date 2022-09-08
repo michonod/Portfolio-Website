@@ -4,10 +4,7 @@ import { useTheme } from "@emotion/react";
 const About = () => {
   const theme = useTheme();
   return (
-    <div
-      id="about"
-      style={{ height: "100vh", backgroundColor: `${theme.color.primary}` }}
-    >
+    <div id="about" style={{ height: "100vh" }}>
       About
     </div>
   );

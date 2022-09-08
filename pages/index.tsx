@@ -10,6 +10,7 @@ import Contact from "../components/Contact";
 import { theme } from "../helpers/Theme";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { useState } from "react";
+import { Wrapper } from "../styles/styles";
 
 const Home: NextPage = () => {
   const [navbarColor, setNavbarColor] = useState(false);
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
     }
   };
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <Wrapper>
       <Scrollbars
         universal={true}
         autoHide
@@ -41,7 +42,7 @@ const Home: NextPage = () => {
           <Contacts position="right" />
         </ThemeProvider>
       </Scrollbars>
-    </div>
+    </Wrapper>
   );
 };
 

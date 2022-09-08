@@ -3,10 +3,7 @@ import { theme } from "../helpers/Theme";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      style={{ height: "100vh", backgroundColor: theme.color.primary }}
-    >
+    <div id="contact" style={{ height: "100vh" }}>
       Contact
     </div>
   );

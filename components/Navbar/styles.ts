@@ -11,6 +11,7 @@ export const NavbarContainer = styled.nav`
   top: 0;
   left: 0;
   z-index: 100;
+  color: white;
 `;
 
 export const Logo = styled.h3`
@@ -24,9 +25,14 @@ export const List = styled.ul`
   justify-content: center;
   list-style: none;
   margin-right: 70px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 
   li:last-of-type {
     margin-right: 0;
+  }
+  li a {
+    color: #f2f0f0;
   }
 `;
 

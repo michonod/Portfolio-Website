@@ -4,6 +4,10 @@ import {
   LinkedinOutlined,
   FacebookOutlined,
   GithubOutlined,
+  InstagramFilled,
+  LinkedinFilled,
+  FacebookFilled,
+  GithubFilled,
 } from "@ant-design/icons";
 
 export const ContactLeft = styled.div`
@@ -25,20 +29,21 @@ export const WrapperRight = styled.div`
   position: fixed;
   right: -50px;
   bottom: 150px;
+  color: #fff;
 `;
 
-export const InstagramIcon = styled(InstagramOutlined)`
+export const InstagramIcon = styled(InstagramFilled)`
   margin-bottom: 10px;
   font-size: 25px;
 `;
-export const LinkedinIcon = styled(LinkedinOutlined)`
+export const LinkedinIcon = styled(LinkedinFilled)`
   margin-bottom: 10px;
   font-size: 25px;
 `;
-export const FacebookIcon = styled(FacebookOutlined)`
+export const FacebookIcon = styled(FacebookFilled)`
   margin-bottom: 10px;
   font-size: 25px;
 `;
-export const GithubIcon = styled(GithubOutlined)`
+export const GithubIcon = styled(GithubFilled)`
   font-size: 25px;
 `;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   ContactLeft,
@@ -20,10 +21,29 @@ const Contacts = ({ position }: ContactProps) => {
       {position === "left" && (
         <ContactLeft>
           <WrapperLeft>
-            <InstagramIcon style={{ color: "#e6683c" }} />
-            <LinkedinIcon style={{ color: "#0072b1" }} />
-            <FacebookIcon style={{ color: "#0165E1" }} />
-            <GithubIcon style={{ color: " #171515" }} />
+            <Link href="https://www.instagram.com/michonod/" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <InstagramIcon style={{ color: "#e6683c" }} />
+              </a>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/mihail-davidevski/"
+              passHref
+            >
+              <a target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon style={{ color: "#0072b1" }} />
+              </a>
+            </Link>
+            <Link href="https://www.facebook.com/majkl.david/" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <FacebookIcon style={{ color: "#0165E1" }} />
+              </a>
+            </Link>
+            <Link href="https://github.com/michonod" passHref>
+              <a target="_blank" rel="noopener noreferrer">
+                <GithubIcon style={{ color: " #171515" }} />
+              </a>
+            </Link>
           </WrapperLeft>
         </ContactLeft>
       )}
