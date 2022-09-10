@@ -7,6 +7,7 @@ import {
   Div,
   DivFlexed,
   FlexContainer,
+  Name,
   Text,
 } from "./styles";
 import { useLottie } from "lottie-react";
@@ -27,14 +28,15 @@ const HomePage = () => {
       <DivFlexed>
         <FlexContainer>
           <Text>Hi there, my name is</Text>
-          <BigText>Mihail Davidevski.</BigText>
+          <Name>Mihail Davidevski.</Name>
           <BigText>I build things for the web.</BigText>
           <Description>
-            I'm front-end developer who design and code beautifull simple things
+            I'm front-end developer based in Skopje, Macedonia, who design and
+            code beautifull simple things.
           </Description>
 
           <Link href="#contact">
-            <ContactButton>Contact Me! </ContactButton>
+            <ContactButton>Contact Me </ContactButton>
           </Link>
         </FlexContainer>
         <Div>{View}</Div>

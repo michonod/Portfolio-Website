@@ -1,42 +1,44 @@
 import styled from "@emotion/styled";
 
 export const StyledButton = styled.button`
-  padding: 5px 20px;
-  font-size: 16px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
   background-color: transparent;
-
+  font-weight: 500;
   border-radius: 4px;
   border: 1px solid white;
   outline: none;
   transition: 0.2s ease-in;
   cursor: pointer;
   color: white;
-  font-weight: 700;
   &:hover {
-    background-color: rgba(139, 187, 226, 0.5);
-
+    background-color: #619c90;
     border: 1px solid white;
+    color: white;
   }
   a {
     list-style: none;
     text-decoration: none;
-    color: #333;
+    color: white;
   }
 `;
 
 export const ContactButton = styled(StyledButton)`
-  padding: 10px 40px;
+  padding: 15px 50px;
   background-color: transparent;
-  border-color: #333;
-  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  border-color: white;
+  color: white;
 
   &:hover {
-    border: 1px solid #333;
+    border: 1px solid white;
+    color: white;
   }
-  a {
-    color: #333;
-    &:hover {
-      color: #333;
-    }
-  }
+`;
+
+export const SubmitButton = styled(StyledButton)`
+  margin: 0 auto;
+  text-transform: capitalize;
 `;

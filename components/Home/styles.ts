@@ -5,15 +5,25 @@ export const Container = styled.div`
   display: flex;
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  font-size: 18px;
+  color: #c3c3c3;
+`;
 export const BigText = styled.span`
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 800;
-  color: ${(props) => props.theme.color.grey};
+  color: #ff4d4d;
+`;
+
+export const Name = styled(BigText)`
+  color: #c3c3c3;
+  margin-bottom: 20px;
+  margin-top: 10px;
 `;
 
 export const Description = styled.p`
   margin-bottom: 20px;
+  color: #fff;
 `;
 
 export const FlexContainer = styled.div`

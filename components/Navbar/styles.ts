@@ -5,7 +5,7 @@ export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 75px;
   position: fixed;
   width: 100%;
   background: transparent;
@@ -40,19 +40,22 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin: 0px 15px;
-  font-size: 15px;
+  font-size: 16px;
   list-style: none;
 `;
 
 export const Link = styled.a`
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: ${(props) => props.theme.color.black};
   transition: all 0.1s ease-in;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
 
   &:hover {
-    color: black;
+    color: #c3c3c3;
   }
 `;
 

@@ -73,10 +73,10 @@ export const GithubIcon = styled(GithubFilled)`
 export const LinkA = styled.a`
   text-decoration: none;
   font-size: 30px;
-  color: #333;
+  color: white;
   transition: all 0.2s ease-in;
 
   &:hover {
-    color: white;
+    color: #7cf8de;
   }
 `;
