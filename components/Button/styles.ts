@@ -22,6 +22,10 @@ export const StyledButton = styled.button`
     text-decoration: none;
     color: white;
   }
+  @media (max-width: 900px) {
+    font-size: 13px;
+    padding: 8px 25px;
+  }
 `;
 
 export const ContactButton = styled(StyledButton)`
@@ -35,6 +39,11 @@ export const ContactButton = styled(StyledButton)`
   &:hover {
     border: 1px solid white;
     color: white;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 8px 30px;
+    font-size: 16px;
   }
 `;
 

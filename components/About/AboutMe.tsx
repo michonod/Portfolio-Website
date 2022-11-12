@@ -52,8 +52,8 @@ const AboutMe = () => {
           <Image
             src="/assets/mihail.jpg"
             alt="mihail"
-            width={300}
-            height={300}
+            width={420}
+            height={320}
           />
         </ImageWrapper>
       </ImageContainer>

@@ -43,6 +43,9 @@ export const Container = styled.div`
   height: 100vh;
   width: 30%;
   line-height: 25px;
+  @media (max-width: 1500px) {
+    margin-right: 100px;
+  }
 `;
 
 export const Title = styled.h3`
