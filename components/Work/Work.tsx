@@ -1,5 +1,4 @@
 import React from "react";
-import { theme } from "../../helpers/Theme";
 import { Description, Div, Title } from "./styled";
 
 const Work = () => {

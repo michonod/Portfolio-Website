@@ -3,9 +3,10 @@ import {
   DownloadOutlined,
   MenuOutlined,
 } from "@ant-design/icons";
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.nav<{ showMenu: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,18 +18,29 @@ export const NavbarContainer = styled.nav`
   left: 0;
   z-index: 100;
   color: white;
-  @media (max-width: 786px) {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: rebeccapurple;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
+  ${(props) =>
+    props.showMenu &&
+    css`
+      @media (max-width: 786px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #485563;
+      }
+    `}
+  ${(props) =>
+    !props.showMenu &&
+    css`
+      @media (max-width: 786px) {
+        display: none;
+      }
+    `}
 `;
 
-export const Logo = styled.h3`
+export const Logo = styled.h3<{ showMenu: boolean }>`
   font-size: 54px;
   margin-left: 70px;
   font-family: "Qwitcher Grypen", cursive;
@@ -36,11 +48,15 @@ export const Logo = styled.h3`
     font-size: 40px;
   }
   @media (max-width: 786px) {
-    display: none;
+    ${(props) =>
+      props.showMenu &&
+      css`
+        display: none;
+      `}
   }
 `;
 
-export const List = styled.ul`
+export const List = styled.ul<{ showMenu: boolean }>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,11 +71,15 @@ export const List = styled.ul`
   li a {
     color: #f2f0f0;
   }
-  @media (max-width: 786px) {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0px;
-  }
+  ${(props) =>
+    props.showMenu &&
+    css`
+      @media (max-width: 786px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+      }
+    `}
 `;
 
 export const ListItem = styled.li`
@@ -87,13 +107,6 @@ export const Link = styled.a`
   &:hover {
     color: #c3c3c3;
   }
-
-  @media (max-width: 900px) {
-    font-size: 13px;
-  }
-  /* @media (max-width: 768px) {
-    display: none;
-  } */
 `;
 
 export const DownloadIcon = styled(DownloadOutlined)`
@@ -104,17 +117,23 @@ export const DownloadIcon = styled(DownloadOutlined)`
 export const Menu = styled(MenuOutlined)`
   font-size: 24px;
   display: none;
-  @media (max-width: 768px) {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @media (max-width: 786px) {
     display: block;
   }
 `;
 
 export const MenuClose = styled(CloseOutlined)`
   font-size: 24px;
-  /* display: none; */
+  display: none;
   margin-top: 20px;
-  @media (max-width: 768px) {
+  @media (max-width: 786px) {
     display: block;
+    position: absolute;
+    top: 0px;
+    right: 20px;
   }
 `;
 

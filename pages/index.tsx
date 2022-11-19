@@ -38,8 +38,7 @@ const Home: NextPage = () => {
           <About />
           <Work />
           <Contact />
-          <Contacts position="left" />
-          <Contacts position="right" />
+          <Contacts />
         </ThemeProvider>
       </Scrollbars>
     </Wrapper>

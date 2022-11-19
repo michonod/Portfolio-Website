@@ -4,7 +4,7 @@ const serviceId = "service_xkbqujp";
 const templateId = "template_1h162ks";
 const userID = "Hg0uJdp30gUWdtjYV";
 
-const sendEmail = (content) => {
+export const sendEmail = (content) => {
   init(userID);
   const toSend = {
     from_name: content.from_name,
@@ -21,5 +21,3 @@ const sendEmail = (content) => {
       console.log(err);
     });
 };
-
-export default { sendEmail };

@@ -15,6 +15,9 @@ export const ImageContainer = styled.div`
   &:hover {
     opacity: 1;
   }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -33,6 +36,7 @@ export const ImageWrapper = styled.div`
 export const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
+  position: relative;
 `;
 
 export const Container = styled.div`
@@ -42,9 +46,18 @@ export const Container = styled.div`
   align-items: flex-start;
   height: 100vh;
   width: 30%;
-  line-height: 25px;
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
   @media (max-width: 1500px) {
     margin-right: 100px;
+  }
+  @media (max-width: 1200px) {
+    margin-right: 0;
+    height: 80vh;
+  }
+  @media (max-width: 376px) {
+    height: 100%;
   }
 `;
 
@@ -52,6 +65,10 @@ export const Title = styled.h3`
   font-size: 30px;
   margin-bottom: 20px;
   color: white;
+  @media (max-width: 376px) {
+    margin: 10px auto;
+    font-size: 20px;
+  }
 `;
 
 export const TehTitle = styled.h5`

@@ -1,8 +1,12 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-  height: 100vh;
   display: flex;
+  padding-top: 200px;
+
+  @media (max-width: 786px) {
+    padding-top: 0;
+  }
 `;
 
 export const Text = styled.p`
@@ -12,20 +16,21 @@ export const Text = styled.p`
 export const BigText = styled.span`
   font-size: 70px;
   font-weight: 800;
+  margin-bottom: 30px;
   color: #ff4d4d;
   @media (max-width: 1200px) {
     font-size: 55px;
   }
   @media (max-width: 876px) {
     font-size: 45px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 `;
 
 export const Name = styled(BigText)`
   color: #c3c3c3;
-  margin-bottom: 20px;
   margin-top: 10px;
+  margin-bottom: 0;
 
   @media (max-width: 1200px) {
     font-size: 50px;
@@ -39,9 +44,9 @@ export const Name = styled(BigText)`
 
 export const Description = styled.p`
   margin-bottom: 20px;
+  line-height: 30px;
   color: #fff;
   @media (max-width: 1200px) {
-    line-height: 30px;
     margin-top: 20px;
   }
 `;
@@ -51,18 +56,24 @@ export const FlexContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  line-height: 60px;
   margin-left: 250px;
   @media (max-width: 1200px) {
     margin: 0px 40px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 `;
 
 export const Div = styled.div`
   width: 40%;
   @media (max-width: 1200px) {
-    width: 45%;
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 65%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+    margin-top: 40px;
   }
 `;
 

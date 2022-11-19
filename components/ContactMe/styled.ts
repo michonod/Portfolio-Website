@@ -6,6 +6,19 @@ export const Div = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1024px) {
+    h4 {
+      font-size: 25px;
+    }
+    label {
+      font-size: 15px;
+    }
+    @media (max-width: 376px) {
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
 `;
 
 export const Title = styled.h4`
@@ -33,6 +46,16 @@ export const TextArea = styled.textarea`
   margin-bottom: 20px;
 
   outline: none;
+
+  @media (max-width: 487px) {
+    width: 300px;
+  }
+  @media (max-width: 320px) {
+    width: 250px;
+  }
+  @media (max-width: 280px) {
+    width: 200px;
+  }
 `;
 export const Input = styled.input`
   display: block;
@@ -40,4 +63,27 @@ export const Input = styled.input`
   margin-bottom: 10px;
   outline: none;
   padding: 5px;
+  @media (max-width: 487px) {
+    width: 300px;
+  }
+  @media (max-width: 320px) {
+    width: 250px;
+  }
+  @media (max-width: 280px) {
+    width: 200px;
+  }
+`;
+
+export const Message = styled.p<{ success?: boolean }>`
+  margin: 15px auto;
+  color: ${({ success }) => (success ? "green" : "red")};
+  text-align: center;
+  font-weight: 500;
+
+  @media (max-width: 320px) {
+    max-width: 250px;
+  }
+  @media (max-width: 280px) {
+    width: 200px;
+  }
 `;

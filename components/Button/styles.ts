@@ -23,7 +23,7 @@ export const StyledButton = styled.button`
     color: white;
   }
   @media (max-width: 900px) {
-    font-size: 13px;
+    font-size: 14px;
     padding: 8px 25px;
   }
 `;
@@ -43,6 +43,11 @@ export const ContactButton = styled(StyledButton)`
 
   @media (max-width: 1200px) {
     padding: 8px 30px;
+    font-size: 16px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-top: 10px;
     font-size: 16px;
   }
 `;

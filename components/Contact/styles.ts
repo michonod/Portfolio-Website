@@ -6,6 +6,12 @@ import {
   GithubFilled,
 } from "@ant-design/icons";
 
+export const Container = styled.div`
+  @media (max-width: 678px) {
+    display: none;
+  }
+`;
+
 export const ContactLeft = styled.div`
   position: fixed;
   bottom: 50px;
@@ -61,7 +67,6 @@ export const LinkedinIcon = styled(LinkedinFilled)`
   color: #0072b1;
 `;
 export const FacebookIcon = styled(FacebookFilled)`
-  margin-bottom: 10px;
   font-size: 25px;
   color: #0165e1;
 `;
@@ -75,6 +80,8 @@ export const LinkA = styled.a`
   font-size: 30px;
   color: white;
   transition: all 0.2s ease-in;
+  margin: 0;
+  padding: 0;
 
   &:hover {
     color: #7cf8de;
