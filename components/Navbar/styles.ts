@@ -98,7 +98,7 @@ export const Link = styled.a`
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
-  color: ${(props) => props.theme.color.black};
+  color: black;
   transition: all 0.1s ease-in;
   text-transform: uppercase;
   letter-spacing: 1px;
