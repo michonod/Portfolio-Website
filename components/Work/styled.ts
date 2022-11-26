@@ -31,3 +31,36 @@ export const Description = styled.p`
   font-size: 30px;
   color: white;
 `;
+
+export const ProjectContainer = styled.div`
+  height: 400px;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const AnchorTag = styled.a``;
+
+export const SiteName = styled.p`
+  color: white;
+  margin-bottom: 20px;
+`;
+
+export const ImageContainer = styled.div`
+  height: 200px;
+  width: 300px;
+  position: relative;
+  padding: 10px;
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+`;
