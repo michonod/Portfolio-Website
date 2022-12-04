@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const Div = styled.div`
   width: 100vw;
   height: 100vh;
+  margin-bottom: 200px;
 `;
 
 export const ImageContainer = styled.div`
