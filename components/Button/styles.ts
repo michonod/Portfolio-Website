@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { ButtonProps } from "./Button";
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<ButtonProps>`
   padding: 8px 30px;
   text-transform: uppercase;
   font-size: 14px;
@@ -10,10 +11,10 @@ export const StyledButton = styled.button`
   border: 1px solid white;
   outline: none;
   transition: 0.2s ease-in;
-  cursor: pointer;
+  cursor: ${(props) => !props.disabled && "pointer"};
   color: white;
   &:hover {
-    background-color: #619c90;
+    background-color: ${(props) => !props.disabled && "#619c90"};
     border: 1px solid white;
     color: white;
   }

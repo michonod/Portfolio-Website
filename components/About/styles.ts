@@ -37,6 +37,7 @@ export const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 50px;
 `;
 
 export const Container = styled.div`
@@ -91,4 +92,5 @@ export const List = styled.ul``;
 export const ListItem = styled.li`
   font-size: 16px;
   margin-right: 30px;
+  margin-bottom: 5px;
 `;

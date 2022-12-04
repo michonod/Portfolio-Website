@@ -23,6 +23,7 @@ const technologies: string[] = [
   "NextJs",
   "Jest",
   "Styled Components",
+  "Git",
 ];
 
 const AboutMe = () => {

@@ -9,40 +9,32 @@ import {
   SiteName,
 } from "./styled";
 
-interface ProjectType {
-  projects: {
-    name: string;
-    image: string;
-    key: string;
-    codeLink: string;
-    webLink?: string;
-  }[];
-}
+type Project = {
+  name: string;
+  image: string;
+  key: string;
+  codeLink: string;
+  webLink?: string;
+};
 
-const ProjectCard = (projects: ProjectType) => {
+const ProjectCard = ({ key, codeLink, image, name, webLink }: Project) => {
   return (
     <ProjectContainer>
-      {projects.projects.map((project) => {
-        return (
-          <>
-            <SiteName>{project.name}</SiteName>
-            <ImageContainer key={project.key}>
-              <Image
-                src={`/assets/projects/${project.image}`}
-                layout="fill"
-                alt={project.name}
-              />
-            </ImageContainer>
-            <ButtonsContainer>
-              <AnchorTag href={project.codeLink} target="_blank">
-                <Button>Code</Button>
-              </AnchorTag>
+      <>
+        <ImageContainer key={key}>
+          <Image src={`/assets/projects/${image}`} layout="fill" alt={name} />
+        </ImageContainer>
+        <SiteName>{name}</SiteName>
+        <ButtonsContainer>
+          <AnchorTag href={codeLink} target="_blank">
+            <Button>Code</Button>
+          </AnchorTag>
 
-              <Button>Website</Button>
-            </ButtonsContainer>
-          </>
-        );
-      })}
+          <AnchorTag href={webLink} target="_blank">
+            <Button disabled={Boolean(!webLink)}>Website</Button>
+          </AnchorTag>
+        </ButtonsContainer>
+      </>
     </ProjectContainer>
   );
 };
