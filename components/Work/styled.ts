@@ -51,6 +51,7 @@ export const AnchorTag = styled.a``;
 export const SiteName = styled.p`
   color: white;
   margin-bottom: 20px;
+  text-align: center;
 `;
 
 export const ImageContainer = styled.div`

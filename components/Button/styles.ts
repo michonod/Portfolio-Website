@@ -11,7 +11,7 @@ export const StyledButton = styled.button<ButtonProps>`
   border: 1px solid white;
   outline: none;
   transition: 0.2s ease-in;
-  cursor: ${(props) => !props.disabled && "pointer"};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   color: white;
   &:hover {
     background-color: ${(props) => !props.disabled && "#619c90"};
@@ -26,6 +26,15 @@ export const StyledButton = styled.button<ButtonProps>`
   @media (max-width: 900px) {
     font-size: 14px;
     padding: 8px 25px;
+  }
+  @media (max-width: 400px) {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 12px;
+    padding: 4px 10px;
   }
 `;
 
