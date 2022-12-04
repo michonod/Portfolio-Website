@@ -43,7 +43,7 @@ export const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 `;
 
 export const AnchorTag = styled.a``;
