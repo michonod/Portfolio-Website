@@ -32,7 +32,7 @@ export const Description = styled.p`
 `;
 
 export const ProjectContainer = styled.div`
-  height: 350px;
+  height: 320px;
   width: 300px;
   border: 1px solid white;
   border-radius: 4px;
@@ -49,7 +49,6 @@ export const AnchorTag = styled.a``;
 
 export const SiteName = styled.p`
   color: white;
-  margin-bottom: 20px;
   text-align: center;
 `;
 
@@ -64,7 +63,6 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
 `;
 
 export const ProjectWrapper = styled.div`
