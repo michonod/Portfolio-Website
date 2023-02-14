@@ -22,6 +22,7 @@ const technologies: string[] = [
   "React",
   "NextJs",
   "Jest",
+  "Cypress",
   "Styled Components",
   "Git",
 ];
