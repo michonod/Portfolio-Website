@@ -53,10 +53,10 @@ const AboutMe = () => {
       <ImageContainer>
         <ImageWrapper>
           <Image
-            src="/assets/mihail.jpg"
+            src="/assets/Mihail.png"
             alt="mihail"
-            width={420}
-            height={320}
+            height={500}
+            width={350}
           />
         </ImageWrapper>
       </ImageContainer>
