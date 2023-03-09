@@ -36,4 +36,11 @@ export const projects = [
     codeLink: "https://github.com/michonod/Pokedex-GraphQL-API-and-Typescript",
     webLink: "https://pokedexgraphqlapollo.netlify.app/",
   },
+  {
+    name: "Spalato Pizza",
+    image: "spalato.png",
+    key: v4(),
+    codeLink: "https://github.com/michonod/Spalato-Pizza",
+    webLink: "",
+  },
 ];
