@@ -34,7 +34,7 @@ const Navbar: NextPage<NavbarProps> = ({ styleState }) => {
             </ListItem>
           ))}
           <ListItem>
-            <Link href="/assets/MihailCV.pdf" target="_blank" download>
+            <Link href="/MihailCV.pdf" target="_blank" download>
               <Button>
                 Resume
                 <DownloadIcon />
