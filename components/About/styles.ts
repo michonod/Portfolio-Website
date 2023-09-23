@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const Div = styled.div`
@@ -38,7 +39,6 @@ export const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 50px;
 `;
 
 export const Container = styled.div`
@@ -56,7 +56,6 @@ export const Container = styled.div`
   }
   @media (max-width: 1200px) {
     margin-right: 0;
-    height: 80vh;
   }
   @media (max-width: 376px) {
     height: 100%;
@@ -89,7 +88,18 @@ export const TehContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const List = styled.ul``;
+export const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: 0.6fr 0.6fr 0.6fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  @media (max-width: 1024px) {
+    grid-template-columns: 0.6fr 0.6fr 0.6fr;
+  }
+`;
 export const ListItem = styled.li`
   font-size: 16px;
   margin-right: 30px;
