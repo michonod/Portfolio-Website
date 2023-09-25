@@ -87,6 +87,7 @@ export const TehContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 `;
 export const Wrapper = styled.div`
   display: grid;
