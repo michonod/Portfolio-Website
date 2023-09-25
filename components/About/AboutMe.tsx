@@ -71,14 +71,14 @@ const technologies: {
   {
     name: "Tailwind",
     image: tailwindLogo,
-    height: 50,
+    height: 40,
     width: 200,
   },
   {
     name: "Styled",
     image: styledLogo,
     height: 150,
-    width: 200,
+    width: 180,
   },
   {
     name: "Cypress",
@@ -95,7 +95,7 @@ const technologies: {
   {
     name: "Git",
     image: gitLogo,
-    height: 100,
+    height: 120,
     width: 100,
   },
 ];
