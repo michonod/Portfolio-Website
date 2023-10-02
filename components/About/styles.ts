@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 
 export const Div = styled.div`
   width: 100vw;
-  height: 100vh;
   margin-bottom: 200px;
 `;
 
@@ -39,6 +38,7 @@ export const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 200px;
 `;
 
 export const Container = styled.div`
@@ -46,7 +46,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
   width: 30%;
   @media (max-width: 1024px) {
     width: 80%;
@@ -84,9 +83,6 @@ export const Description = styled.p`
 `;
 export const TehContainer = styled.div`
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
 `;
 export const Wrapper = styled.div`
